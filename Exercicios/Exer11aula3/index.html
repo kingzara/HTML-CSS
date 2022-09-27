@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    <H1>Reproduzindo audio</H1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <audio src="midia/videoplayback.m4a" controls autoplay></audio>
+    <!--Controls é importante pra a ferramenta de audio aparecer-->
+    <audio  preload="metadata" autoplay controls loop>
+        <!--Loop, quando chega no final do audio recomeça-- outras formas de reproduzir auidos, abaixo-->
+          <source src="midia/perfeito.m4a" type="audio/mpeg">
+          <source src="midia/perfeito.m4a" type="audio/ogg">
+          <source src="midia/perfeito.m4a" type="audio/wav">
+          <p>Infelizmente seu navegador não consegue reproduzir audio <a href="midia/perfeito.m4a" >Clique aqui para baixar o arquivo</a></p>
+    </audio>
+</body>
+</html>
