@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalisando Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;/*pratirar o sublinado do link*/
+            font-weight: bold;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;/*quando passar o mouse em cima, vai aparecer as linhas*/
+        }
+        a::after{
+            content: '[link]'; /*pra adicionar informação */
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalisando Links</h1>
+    <ul>
+        <li><a href="https://github.com/kingzara" target="_blank">Repositorio Github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://cursoemvideo.com">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>
